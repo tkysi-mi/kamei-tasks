@@ -1,0 +1,54 @@
+name: "📝 タスク依頼"
+description: "亀井さんへのタスク依頼フォーム"
+title: "[依頼] "
+labels: []
+body:
+  - type: input
+    id: task_title
+    attributes:
+      label: タスク名
+      description: "何をしてほしいか、簡潔に"
+      placeholder: "例: 〇〇の見積もりを作成する"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: プロジェクト
+      description: "どのプロジェクトに関連しますか？"
+      options:
+        - Readable
+        - バクアゲ
+        - コンサル
+        - Cona
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 詳細・背景
+      description: "背景情報や具体的な要望があれば記入してください"
+      placeholder: "例: A社から問い合わせがあり、来週までに見積もりが必要です"
+    validations:
+      required: false
+
+  - type: input
+    id: deadline
+    attributes:
+      label: 希望期限
+      description: "いつまでに必要ですか？"
+      placeholder: "例: 2026年3月1日 / 来週中 / 急ぎではない"
+    validations:
+      required: false
+
+  - type: input
+    id: requester
+    attributes:
+      label: 依頼者
+      description: "あなたの名前"
+      placeholder: "例: 田中太郎"
+    validations:
+      required: true
