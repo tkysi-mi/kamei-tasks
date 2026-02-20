@@ -7,7 +7,7 @@ body:
     id: task_title
     attributes:
       label: タスク名
-      description: "何をしてほしいか、簡潔に"
+      description: "何をしてほしいか、簡潔に書いてください"
       placeholder: "例: 〇〇の見積もりを作成する"
     validations:
       required: true
@@ -47,8 +47,8 @@ body:
   - type: input
     id: requester
     attributes:
-      label: 依頼者
-      description: "あなたの名前"
+      label: 依頼者名
+      description: "あなたの名前を入力してください"
       placeholder: "例: 田中太郎"
     validations:
       required: true
